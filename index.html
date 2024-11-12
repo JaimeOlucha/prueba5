@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 - Trabajo de Lenguaje de Marcas deHTMl</title>
+
+    <!-- Imagen logotipo en la pestaña de navegación; -->
+    <link rel="icon" type="image/png" href="img/00_logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body id="container">
+
+    <!-- En el encabezado de la pagina web se encuentra el logotipo principal de la empresa
+    y el menu de navegación de las diversas páginas web, en la etiqueta <nav>; -->
+    <header id="encabezado">
+        <a href="index.html"><img id="logo" src="img/00_logoPrincipal_sin fondopng.png" alt="imagenPrincipal"
+                width="400px"></a>
+        <nav>
+
+            <!-- El menú de navegación lo haremos con una lista desordenada <ul>, cada elemento de la lista con <li> y dentro de cada elemento pondremos un enlace con <a>; -->
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nuestroEquipo.html">Nuestro Equipo</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+
+    <!-- En el cuerpo de la página web, irá toda la información de la sección donde naveguemos, lo meteremos en la etiqueta <main>; -->
+    <main id="content">
+
+        <!-- Dividiremos esta pagina web por secciones según lo que estemos hablando usaremos <section>; -->
+        <section id="presentacion">
+
+            <!-- Presentacion con <h1>, imagen del oficio <img> y una cita de la empresa con <cite>; -->
+            <h1>Carpinteria de madera holu</h1>
+            <h2>Proyectos unicos</h2>
+            <h2>¡Crea el tuyo con nosotros!</h2>
+            <br>
+            <img src="img/01/01_presentacion.jpg" alt="carpintero" width="250px">
+            <br>
+            <cite>Tu hogar, nuestro proyecto.</cite>
+            <br>
+
+            <a href="nuestroEquipo.html" class="cajaEnlace">Saber más</a>
+            <a href="productos.html" class="cajaEnlace">Productos</a>
+
+        </section>
+
+        <section id="trabajos">
+
+            <!-- Dividiremos los díferentes trabajos en articulos con <article> dentro de nuestra <section>; -->
+            <article class="trabajo">
+                <img src="img/01/01_adaptabilidad.jpg" alt="adaptabilidad" width="60px">
+                <h3>Adaptabilidad</h3>
+                <p>Nos adaptamos a tus necesidades para el diseño de tu idea.
+                    Sin perder en diseño, precio y calidad.</p>
+            </article>
+
+            <article class="trabajo">
+                <img src="img/01/01_esfuerzo.png" alt="esfuerzo" width="60px">
+                <h3>Esfuerzo</h3>
+                <p>Nuestro esfuerzo es una de nuestras ventajas competitivas más grande, es un valor que nos diferencia
+                    y porque un cliente satisfecho es nuestra mayor recompensa.</p>
+            </article>
+
+            <article class="trabajo">
+                <img src="img/01/01_compromiso.png" alt="compromiso" width="60px">
+                <h3>Compromiso</h3>
+                <p>Nuestro esfuerzo es una de nuestras ventajas competitivas más grande, es un valor que nos diferencia
+                    y porque un cliente satisfecho es nuestra mayor recompensa.</p>
+            </article>
+
+            <article class="trabajo">
+                <img src="img/01/01_reformas.png" alt="reformas" width="60px">
+                <h3>Reformas</h3>
+                <p>Especialistas en reformas de viviendas y locales comerciales. Renueva tu ambiente con nosotros.</p>
+            </article>
+
+            <article class="trabajo">
+                <img src="img/01/01_comercio.png" alt="comercio" width="70px">
+                <h3>Comercio</h3>
+                <p>¿Estás comenzando tu negocio en un local nuevo y necesitas adaptar los espacios con muebles
+                    especiales? Somos tu solución.</p>
+            </article>
+
+            <article class="trabajo">
+                <img src="img/01/01_empresas.jpg" alt="empresas" width="60px">
+                <h3>Empresas</h3>
+                <p>Disponemos de centros de mecanizado para realizar cualquier fresado, bisel, tirador uñero, formas
+                    curvas, piezas circulares.</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="quienesSomos">
+            <!-- En esta sección hacemos una introducción de nosotros, poniendo un enlace directo a Nuestro Equipo con <a>; -->
+
+            <p><strong>¿Quienes somos?</strong></p>
+            <h2>Un equipo con una larga trayectoria</h2>
+            <p>Con una amplia experiencia y un equipo de profesionales de la madera preparados para fabricar e
+                instalar cualquier muebles a medida que necesites.</p>
+            <a href="nuestroEquipo.html" class="cajaEnlace">Saber más</a>
+        </section>
+
+        <hr>
+
+        <section id="proyectos">
+
+            <!-- Dividiremos los díferentes proyectos en articulos con <article> dentro de nuestra <section>; -->
+            <p>¡Conoce algunos de nuestros proyectos y sus opiniones!</p>
+            <br>
+
+            <!-- En cada articulo pondremos un proyecto que está compuesto por una <img> y una reseña del cliente; -->
+            <article class="proyecto">
+                <h3>Cocina Manuel</h3>
+                <img src="img/01/01_opinionCocina.jpg" alt="cocina" width="300px">
+                <p><i>"No puedo estar más contento con la reforma de mi cocina. Carpintería <strong>holu</strong> hizo
+                        un trabajo
+                        impecable. Los materiales son de alta calidad y los acabados son perfectos. Además, el equipo
+                        fue
+                        muy profesional y puntual."</i>
+                    <br>
+                    <strong>Manuel López.</strong>
+                </p>
+            </article>
+
+            <article class="proyecto">
+                <h3>Baño Laura</h3>
+                <img src="img/01/01_opinionBaño.jpg" alt="baño" width="300px">
+                <p><i>"El baño de mis sueños se ha hecho realidad gracias a Carpinteria <strong>holu</strong>. El diseño
+                        es
+                        elegante y funcional, y la calidad de los materiales es inmejorable. ¡Un trabajo de 10!"</i>
+                    <br>
+                    <strong>Laura Martín.</strong>
+                </p>
+            </article>
+
+            <article class="proyecto">
+                <h3>Armario María</h3>
+                <img src="img/01/01_opinionArmario.jpg" alt="armario" width="300px">
+                <p><i>"El armario que me instaló Carpinteria <strong>holu</strong> es simplemente perfecto. Tiene mucho
+                        espacio de almacenamiento y es muy cómodo de usar. ¡Estoy encantada!"</i>
+                    <br>
+                    <strong>María Gómez.</strong>
+                </p>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <section id="mensaje">
+
+            <!-- En esta seccion aplicamos un enlace directo a la pagina Contactos; -->
+            <p>¿Ya estas convencido? Si tienes alguna duda no dudes en contactarnos. ¿Tienes algún proyecto especial?
+                ¡Escríbenos!</p>
+            <a><a href="contacto.html" class="cajaEnlace">Contáctanos</a></a> <!-- Enlace a Contacto; -->
+        </section>
+        
+    </main>
+    
+    <hr>
+
+    <footer>
+        <!-- En el pié de página pondemos el logo con un enlace para volver arriba y el copy con imagenes de las redes que son enlaces a estas; -->
+        <a href="#top"><img src="img/00_logo.png" alt="logo" width="50px"></a> <span>&copy; 2024 holu - Carpintería de
+            madera | Todos los derechos reservados</span>
+        <a href="#">Politica de privacidad</a>
+        <a href="#">Aviso legal</a>
+        <a href="https://www.instagram.com/"><img src="img/01/01_instagram.jpg" alt="instagram" width="30px"></a>
+        <a href="https://www.facebook.com/"><img src="img/01/01_facebook.jpg" alt="facebook" width="28px"></a>
+    </footer>
+
+
+</body>
+
+</html>
